@@ -1,6 +1,7 @@
 site_name: HocSphere
 
 theme:
+  favicon: assets/eagle.png
   palette:
     primary: light blue 
     accent: red
@@ -72,6 +73,8 @@ nav:
     - Machine Learning Course: course-notes/machine-learning-course.md
     - Deep Learning Course: course-notes/deep-learning-course.md
   - Hoc's Team Space: team-space/index.md
+  - Hoc's Playbook:
+    - playbook/index.md
     #- Datasets: paper-review.md
     #- Project:
     #- Project Team Matching: project-team-matching.md

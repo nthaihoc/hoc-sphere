@@ -28,7 +28,7 @@ algorithms for regression (like Linear and Lasso Regression) and classification 
 ## IV. Lecture Schedule
 
 | Lecture | Title | Notes | Code |
-| :----: | :----: | :---: | :--: |
+| :-----: | :---- | :---: | :--: |
 | 01 | Introduction to Artificial Intelligence and Machine Learning Basic Concepts | :material-close: | :material-close: |
 | 02 | Regression Analysis and Regression Algorithm | [Links]({{ csml.lec02 }}){:target="_blank"} | [Links]({{ csml.code02 }}){:target="_blank"} |
 | 03 | Classification and Logistic Regression Algorithms | - | - |
@@ -43,7 +43,7 @@ algorithms for regression (like Linear and Lasso Regression) and classification 
 
 ## V. Resource
 
-### 1. Book
+### {++1. Book++}
 * [Machine Learning Basic - Vu Huu Tiep](https://drive.google.com/file/d/1QUGAEW4nHivTr1ucW7JklayThV2JdOYk/view?usp=sharing).
 
 * [Design Machine Learning System - Chip Huyen](https://drive.google.com/file/d/1j0qaLTGOhLDFjOPO-xMnsSQfaHaPvH-O/view?usp=sharing).
@@ -53,7 +53,7 @@ algorithms for regression (like Linear and Lasso Regression) and classification 
 * [Hands-On Machine Learning with Scikit-Learn & Tensorflow - Aurélien Géron](https://drive.google.com/file/d/10-JBTdruL5iIAWNQxPpYKjcWS6E2uszY/view?usp=sharing).
 
 
-### 2. Courses
+### {++2. Courses++}
 * [Stanford CS229: Machine Learning Course Autumn 2018 - Andrew Ng](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU).
 
 * [Stanford CS229: Machine Learning Course Summer 2019 - Anand Avati](https://www.youtube.com/playlist?list=PLoROMvodv4rNH7qL6-efu_q2_bPuy0adh).
