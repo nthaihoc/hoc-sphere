@@ -1,0 +1,101 @@
+site_name: HocSphere
+
+theme:
+  palette:
+    primary: light blue 
+    accent: red
+  font:
+    text: Roboto
+  name: material
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+    repo: fontawesome/brands/github
+  logo: assets/eagle.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - search.suggest
+    - toc.integrate
+    - header.autohide
+    - navigation.top
+
+repo_url: https://github.com/nthaihoc/iast-csml000
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - md_in_html
+  - attr_list
+  - footnotes
+  - meta
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.mark 
+  - pymdownx.tilde
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
+
+plugins:
+  - macros
+  - search
+
+copyright: Copyright by Nguyen Thai Hoc
+
+nav:
+  - About Hoc: index.md
+  - Hoc's Research Logs:
+    - research-logs/index.md
+    - Cervical Cancer Research: research-logs/cervical-cancer-research.md
+    - Labeling Tool Research: research-logs/labeling-tool-research.md
+        #- Docker Deployment Research: research-logs/docker-deployment-research.md
+  - Hoc's Course Notes:
+    - Machine Learning Course: course-notes/machine-learning-course.md
+    - Deep Learning Course: course-notes/deep-learning-course.md
+  - Hoc's Team Space: team-space/index.md
+    #- Datasets: paper-review.md
+    #- Project:
+    #- Project Team Matching: project-team-matching.md
+    #- Project Proposal: project-proposal.md
+    #- Project Tracks: project-tracks.md
+    #- Project Mockup: project-mockup.md
+    #- Project Pitch Video: project-pitch-video.md
+    #- Project Interim Report: project-ieaglenterim-report.md
+    #- Project Submission Guidelines: project-submission-guidelines.md
+    #- Poster Session Guidelines: poster-session-guidelines.md
+    #- Project Review Guidelines: project-review-guidelines.md
+    #- Guest Lectures:
+    #- Niloy J. Mitra: guest-lecture-niloy-mitra.md
+    #- Jun Gao: guest-lecture-jun-gao.md
+
+extra:
+  analytics:
+    provider: google
+    property: G-S3GEPQ874N
+  csml:
+    lec02: https://drive.google.com/drive/folders/1-pePMyNJuVEXeTV1Nq1zQpGTNm0K3MGo?usp=drive_link
+    code02: https://www.kaggle.com/code/nguyenthaihoc/01-linear-regression-gradient-descent
+  research:
+    note01: https://drive.google.com/file/d/1TWiV47dTB1ORqoYCq-1OpJlGwK75YSgW/view?usp=sharing
+    note02: https://drive.google.com/file/d/1yLjUqDO58RPgVt6e0-n0HegZJhBKBpbd/view?usp=drive_link
+    note03: https://nthaihoc.github.io/hoc-sphere/research-logs/ccr-notes/note01/
+    mate01: https://www.researchgate.net/publication/370314151_Self-supervised_learning_for_medical_image_classification_a_systematic_review_and_implementation_guidelines
