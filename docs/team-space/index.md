@@ -30,6 +30,9 @@
 | 03/12/2024 | S01: Self-Supervised Learning for Medical Image Classification | Nguyen Thai Hoc | [**Links**](https://www.researchgate.net/publication/370314151_Self-supervised_learning_for_medical_image_classification_a_systematic_review_and_implementation_guidelines){:target="_blank"} | [**Links**](research-logs/ccr-notes/note01.md){:target="_blank"} |
 | | S02: Deep Neural Networks to Detect Weeds from Crops in Agricultural Environments in Real-Time | Ly Quoc Huy | [**Links**](https://www.mdpi.com/2072-4292/13/21/4486){:target="_blank"} | [**Links**](https://){:target="_blank"} |
 | | S03: Analyzing and Improving the Image Quality of StyleGAN | Hoang Van Thao | [**Links**](https://openaccess.thecvf.com/content_CVPR_2020/papers/Karras_Analyzing_and_Improving_the_Image_Quality_of_StyleGAN_CVPR_2020_paper.pdf){:target="_blank"} | [**Links**](https://){:target="_blank"} |
+| 10/12/2024 | S01: Discussion the Model Training Processing for Cervical Cancer Datasets | Nguyen Thai Hoc | - | - |
+|           | S02: Implementation and Evaluation the Performance of Model for generative Image Problems | Hoang Van Thao | - | - |
+|           | S03: Developing an Experimental Pipeline for Agricultural Tree Datasets | Ly Quoc Huy | - | - |
 
 
 ## :octicons-link-16: Quick Links
