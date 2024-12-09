@@ -30,8 +30,8 @@
 | 03/12/2024 | S01: Self-Supervised Learning for Medical Image Classification | Nguyen Thai Hoc | [**Links**](https://www.researchgate.net/publication/370314151_Self-supervised_learning_for_medical_image_classification_a_systematic_review_and_implementation_guidelines){:target="_blank"} | [**Links**](research-logs/ccr-notes/note01.md){:target="_blank"} |
 | | S02: Deep Neural Networks to Detect Weeds from Crops in Agricultural Environments in Real-Time | Ly Quoc Huy | [**Links**](https://www.mdpi.com/2072-4292/13/21/4486){:target="_blank"} | [**Links**](https://){:target="_blank"} |
 | | S03: Analyzing and Improving the Image Quality of StyleGAN | Hoang Van Thao | [**Links**](https://openaccess.thecvf.com/content_CVPR_2020/papers/Karras_Analyzing_and_Improving_the_Image_Quality_of_StyleGAN_CVPR_2020_paper.pdf){:target="_blank"} | [**Links**](https://){:target="_blank"} |
-| 10/12/2024 | S01: Discussion the Model Training Processing for Cervical Cancer Datasets | Nguyen Thai Hoc | - | - |
-|           | S02: Implementation and Evaluation the Performance of Model for generative Image Problems | Hoang Van Thao | - | - |
+| 10/12/2024 | S01: Discussion on Model Training Processes for Cervical Cancer Datasets | Nguyen Thai Hoc | - | - |
+|           | S02: Implementation and Evaluation of Model Performance for Generative Image Problems | Hoang Van Thao | - | - |
 |           | S03: Developing an Experimental Pipeline for Agricultural Tree Datasets | Ly Quoc Huy | - | - |
 
 
@@ -39,7 +39,9 @@
 
 Links to folder topic of team includes {==papers review==}, {==note==} and {==source code==}:
 
-[Papers Review :paperclips:](https://docs.google.com/spreadsheets/d/1pH1nJ2jGqqDAKIkdOLfEIuYfRgSicy7SzuvceZRbcCY/edit?usp=sharing){.md-button} [Notes :material-file-document-outline:](https://drive.google.com/drive/folders/1vR2IlWZfA0W5aziqopLt3aot0Wl2Mff0?usp=sharing){.md-button} [Code :octicons-code-16:](https://drive.google.com/drive/folders/1TfRpb-6Qllysgm8ukw823lOTjxynkunq?usp=sharing){.md-button}
+[Papers Review :paperclips:](https://docs.google.com/spreadsheets/d/1pH1nJ2jGqqDAKIkdOLfEIuYfRgSicy7SzuvceZRbcCY/edit?usp=sharing){.md-button}
+[Notes :material-file-document-outline:](https://drive.google.com/drive/folders/1vR2IlWZfA0W5aziqopLt3aot0Wl2Mff0?usp=sharing){.md-button}
+[Code :octicons-code-16:](https://drive.google.com/drive/folders/1TfRpb-6Qllysgm8ukw823lOTjxynkunq?usp=sharing){.md-button}
 
 ---
 <br>
