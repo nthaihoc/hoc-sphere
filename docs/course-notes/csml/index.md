@@ -1,8 +1,4 @@
----
-icon: material/numeric-1-circle
----
-
-# :fontawesome-solid-graduation-cap: Machine Learning Course
+# :fontawesome-solid-graduation-cap: Course Information
 ---
 
 ## I. Description
@@ -29,7 +25,7 @@ algorithms for regression (like Linear and Lasso Regression) and classification 
 
 | Lecture | Title | Notes | Code |
 | :-----: | :---- | :---: | :--: |
-| 01 | Introduction to Artificial Intelligence and Machine Learning Basic Concepts | :material-close: | :material-close: |
+| 01 | Introduction to Artificial Intelligence and Machine Learning Basic Concepts | - | - |
 | 02 | Regression Analysis and Regression Algorithm | [Links]({{ csml.lec02 }}){:target="_blank"} | [Links]({{ csml.code02 }}){:target="_blank"} |
 | 03 | Classification and Logistic Regression Algorithms | - | - |
 | 04 | Data Split, Cross-Validation, Bias-Variance Trade-off, Regularization, Model/Feature Selection and Problems in Machine Learning | - | - |

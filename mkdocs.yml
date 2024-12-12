@@ -3,7 +3,7 @@ site_name: HocSphere
 theme:
   favicon: assets/eagle.png
   palette:
-    primary: light blue 
+    primary: black 
     accent: red
   font:
     text: Roboto
@@ -33,7 +33,7 @@ theme:
     - header.autohide
     - navigation.top
 
-repo_url: https://github.com/nthaihoc/iast-csml000
+repo_url: https://github.com/nthaihoc/hoc-sphere
 
 extra_css:
   - stylesheets/extra.css
@@ -70,25 +70,14 @@ nav:
     - Labeling Tool Research: research-logs/labeling-tool-research.md
         #- Docker Deployment Research: research-logs/docker-deployment-research.md
   - Hoc's Course Notes:
-    - Machine Learning Course: course-notes/machine-learning-course.md
-    - Deep Learning Course: course-notes/deep-learning-course.md
+    - course-notes/index.md
+    - Machine Learning Course:
+      - course-notes/csml/index.md
+      - Introduction Intelligence Artificial and Machine Learning Basics: course-notes/csml/lecture01.md
+      - Regression Analysis and Regression Algorithm: course-notes/csml/lecture02.md
   - Hoc's Team Space: team-space/index.md
   - Hoc's Playbook:
     - playbook/index.md
-    #- Datasets: paper-review.md
-    #- Project:
-    #- Project Team Matching: project-team-matching.md
-    #- Project Proposal: project-proposal.md
-    #- Project Tracks: project-tracks.md
-    #- Project Mockup: project-mockup.md
-    #- Project Pitch Video: project-pitch-video.md
-    #- Project Interim Report: project-ieaglenterim-report.md
-    #- Project Submission Guidelines: project-submission-guidelines.md
-    #- Poster Session Guidelines: poster-session-guidelines.md
-    #- Project Review Guidelines: project-review-guidelines.md
-    #- Guest Lectures:
-    #- Niloy J. Mitra: guest-lecture-niloy-mitra.md
-    #- Jun Gao: guest-lecture-jun-gao.md
 
 extra:
   analytics:
