@@ -24,22 +24,26 @@ Reasons for using simple transformations:
   <figcaption>Augumentation Techniques of SimCLR Framework</figcaption>
 </figure>
 
-- Finding 1: SimCLR's improvement over previous methods comes from the combination of design choices, not any single feature. Key findings include:
+- Finding 1: SimCLR's improvement over previous methods comes from the combination of design choices,:www not any single feature. Key findings include:
     - Importance of image transformation combinations: SimCLR maximizes agreement between different views of the same image. Combining transformations like random cropping and color distortion effectively prevents trivial solutions like matching color histograms.
     - Significance of combining cropping and color distortion: Cropping creates prediction tasks, such as global-to-local or neighboring views. However, similar color spaces across crops can lead the model to focus on matching colors. Independent color distortion removes this shortcut, forcing the model to learn meaningful, generalizable features.
 
-- Finding 2: The nonlinear projection is important.
+- Finding 2: The nonlinear projection is important.Use all augumentatio techniques the framework provides 	73.17%
+02 	SimCLR 	Cutout, Color distort, Gaussian Noise, Gaussian blur 	72.59%
+03 	SimCLR 	Cutout, Color distort, Gaussian Noise, ROI
 - Finding 3: Scaling up significantly improves performance.
 
 ## III. Experiment and Results
-
+Use all augumentatio techniques the framework provides 	73.17%
+02 	SimCLR 	Cutout, Color distort, Gaussian Noise, Gaussian blur 	72.59%
+03 	SimCLR 	Cutout, Color distort, Gaussian Noise, ROI
 | STT | Model | Type Augumentation | F1-Score |
 | :-: | :---: | :----------------: | :------: |
 | 01 | SimCLR | Use all augumentatio techniques the framework provides | 73.17% |
 | 02 | SimCLR | Cutout, Color distort, Gaussian Noise, Gaussian blur | 72.59% |
 | 03 | SimCLR | Cutout, Color distort, Gaussian Noise, ROI | 65.23% |
 
-
+- Use backbone model different haved best performance
 
 
 
