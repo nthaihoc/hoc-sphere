@@ -1,0 +1,48 @@
+:root {
+  --md-primary-fg-color:        #0033a0;
+  --md-primary-fg-color--light: #009cde;
+  --md-primary-fg-color--dark:  #0072ce;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.md-grid {
+  max-width: 1280px;
+}
+
+.md-typeset {
+  line-height: 1.8;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  color: black;
+  font-weight: bold;
+}
+
+.md-typeset h1 {
+  margin-bottom: -0.5em;
+}
+
+.md-typeset ul,
+.md-typeset ol {
+  line-height: 1.5;
+}
+
+.md-typeset mark {
+  background-color: #FFC107;
+}
+
+.md-typeset ins {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  color: #C62828
+}
+
+.md-typeset table:not([align]) {
+  font-size: 90%;
+}
