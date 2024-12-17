@@ -1,8 +1,12 @@
 # The SimCLR Model
+---
+
+==Framework Information:== [Links](https://github.com/google-research/simclr)
 
 ## I. The SimCLR framework
 
 SimCLR is a method for learning generalized representations from unlabeled image data. It works by:
+
 - Learning shared representations by maximizing similarity between different augmented views of the same image (attracting them).
 - Reducing similarity between representations of different images (repelling them).
 - The model can then be fine-tuned with a small amount of labeled data to effectively perform classification tasks.
@@ -20,30 +24,25 @@ Reasons for using simple transformations:
 ## II. Understanding Contrastive Learning of Representations.
 
 <figure markdown="span">
-  ![Image title](../../assets/type_augumentation.png){ width="500" }
+  ![Image title](../../assets/augumentation.png){ width="600" }
   <figcaption>Augumentation Techniques of SimCLR Framework</figcaption>
 </figure>
 
-- Finding 1: SimCLR's improvement over previous methods comes from the combination of design choices,:www not any single feature. Key findings include:
-    - Importance of image transformation combinations: SimCLR maximizes agreement between different views of the same image. Combining transformations like random cropping and color distortion effectively prevents trivial solutions like matching color histograms.
-    - Significance of combining cropping and color distortion: Cropping creates prediction tasks, such as global-to-local or neighboring views. However, similar color spaces across crops can lead the model to focus on matching colors. Independent color distortion removes this shortcut, forcing the model to learn meaningful, generalizable features.
+{++Finding 1++}: SimCLR's improvement over previous methods comes from the combination of design choices,:www not any single feature. Key findings include:
 
-- Finding 2: The nonlinear projection is important.Use all augumentatio techniques the framework provides 	73.17%
-02 	SimCLR 	Cutout, Color distort, Gaussian Noise, Gaussian blur 	72.59%
-03 	SimCLR 	Cutout, Color distort, Gaussian Noise, ROI
-- Finding 3: Scaling up significantly improves performance.
+- Importance of image transformation combinations: SimCLR maximizes agreement between different views of the same image. Combining transformations like random cropping and color distortion effectively prevents trivial solutions like matching color histograms.
+- Significance of combining cropping and color distortion: Cropping creates prediction tasks, such as global-to-local or neighboring views. However, similar color spaces across crops can lead the model to focus on matching colors. Independent color distortion removes this shortcut, forcing the model to learn meaningful, generalizable features.
+
+{++Finding 2++}: The nonlinear projection is important.
+
+{++Finding 3++}: Scaling up significantly improves performance.
 
 ## III. Experiment and Results
-Use all augumentatio techniques the framework provides 	73.17%
-02 	SimCLR 	Cutout, Color distort, Gaussian Noise, Gaussian blur 	72.59%
-03 	SimCLR 	Cutout, Color distort, Gaussian Noise, ROI
 | STT | Model | Type Augumentation | F1-Score |
 | :-: | :---: | :----------------: | :------: |
 | 01 | SimCLR | Use all augumentatio techniques the framework provides | 73.17% |
 | 02 | SimCLR | Cutout, Color distort, Gaussian Noise, Gaussian blur | 72.59% |
 | 03 | SimCLR | Cutout, Color distort, Gaussian Noise, ROI | 65.23% |
 
-- Use backbone model different haved best performance
-
-
-
+---
+</br>

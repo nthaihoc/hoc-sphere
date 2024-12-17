@@ -15,10 +15,10 @@ icon: material/numeric-1-circle
 
 | Deadline | Name | Status | Details | Materials | Notes & Slides | Code |
 | :------- | :--- | :----: | :------ | :-------: | :------------: | :--: |
-| 16/09/2024 - 16/11/2024 | Ensemble Learning for Cervical Cancer Cytology | :material-check-all: | - Research ensemble learning methods for cervical cancer <br> - Compare the performance between individual and ensemble model| :material-close: | [**Links**]({{ research.note01 }}){:target="_blank"} | :material-close: |
-| 23/09/2024 | Methods for Preprocessing and Data Split for Multi-Classification | :material-check-all: | - Research the preprocessing and data split techniques <br> - Implementation these methods on cervical cancer datasets | :material-close: | [**Links**]({{ research.note02 }}){:target="_blank"} | :material-close: |
-| 03/12/2024 | Self-Suppervised Learning for Cervical Cancer Classification | :material-check-all: | - Survey and research the self-suppervised learning techniques <br> - Planning implementation for cervical cancer datasets | [**Links**]({{ research.mate01 }}){:target="_blank"} | [**Links**]({{ research.note03 }}){:target="_blank"} | :material-close: |
-| :material-close: | Model Architecture Modification for Cervical Cancer Classification | :material-close: | - Summarize techniques related to modifying model architecture to adapt to the dataset <br> - Implementation these techniques and evaluation the performance of the model modified | :material-close: | :material-close: | :material-close: |
+| 16/09/2024 - 16/11/2024 | Ensemble Learning for Cervical Cancer Cytology | :material-check-all: | - Research ensemble learning methods for cervical cancer <br> - Compare the performance between individual and ensemble model| N/A | [**Links**]({{ research.note01 }}){:target="_blank"} | N/A |
+| 23/09/2024 | Methods for Preprocessing and Data Split for Multi-Classification | :material-check-all: | - Research the preprocessing and data split techniques <br> - Implementation these methods on cervical cancer datasets | N/A | [**Links**]({{ research.note02 }}){:target="_blank"} | N/A |
+| 03/12/2024 | Self-Suppervised Learning for Cervical Cancer Classification | :material-check-all: | - Survey and research the self-suppervised learning techniques <br> - Planning implementation for cervical cancer datasets | [**Links**]({{ research.mate01 }}){:target="_blank"} | [**Links**]({{ research.note03 }}){:target="_blank"} | N/A |
+| 16/12/2024 | The SimCLR Framework Overview | ^^Progress^^ | - To understand the key components of SimCLR framework <br> - Setting up a baseline for model experimentation on a dataset | [**Links**]({{ research.note04 }}) | [**Links**]({{ research.mate02 }}) | N/A |
 
 
 ## :octicons-link-16: Quick Links
