@@ -68,7 +68,7 @@ nav:
     - research-logs/index.md
     - Cervical Cancer Research: research-logs/cervical-cancer-research.md
     - Labeling Tool Research: research-logs/labeling-tool-research.md
-        #- Docker Deployment Research: research-logs/docker-deployment-research.md
+
   - Hoc's Course Notes:
     - course-notes/index.md
     - Machine Learning Course:
@@ -89,9 +89,11 @@ extra:
   research:
     note01: https://drive.google.com/file/d/1TWiV47dTB1ORqoYCq-1OpJlGwK75YSgW/view?usp=sharing
     note02: https://drive.google.com/file/d/1yLjUqDO58RPgVt6e0-n0HegZJhBKBpbd/view?usp=drive_link
-    note03: https://nthaihoc.github.io/hoc-sphere/research-logs/ccr-notes/note01/
-    note04: https://nthaihoc.github.io/hoc-sphere/research-logs/ccr-notes/note02/
-    mate01: https://www.researchgate.net/publication/370314151_Self-supervised_learning_for_medical_image_classification_a_systematic_review_and_implementation_guidelines
+    note03: ccr-notes/note01.md
+    
+    mate01: 
     mate02: https://arxiv.org/pdf/2002.05709
+    mate03: https://arxiv.org/pdf/2006.10029
+
 
 

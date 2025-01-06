@@ -13,21 +13,20 @@ icon: material/numeric-1-circle
 
 ## :octicons-tasklist-16: Weeky Task Progress
 
-| Deadline | Name | Status | Details | Materials | Notes & Slides | Code |
-| :------- | :--- | :----: | :------ | :-------: | :------------: | :--: |
-| 16/09/2024 - 16/11/2024 | Ensemble Learning for Cervical Cancer Cytology | :material-check-all: | - Research ensemble learning methods for cervical cancer <br> - Compare the performance between individual and ensemble model| N/A | [**Links**]({{ research.note01 }}){:target="_blank"} | N/A |
-| 23/09/2024 | Methods for Preprocessing and Data Split for Multi-Classification | :material-check-all: | - Research the preprocessing and data split techniques <br> - Implementation these methods on cervical cancer datasets | N/A | [**Links**]({{ research.note02 }}){:target="_blank"} | N/A |
-| 03/12/2024 | Self-Suppervised Learning for Cervical Cancer Classification | :material-check-all: | - Survey and research the self-suppervised learning techniques <br> - Planning implementation for cervical cancer datasets | [**Links**]({{ research.mate01 }}){:target="_blank"} | [**Links**]({{ research.note03 }}){:target="_blank"} | N/A |
-| 16/12/2024 | The SimCLR Framework Overview | ^^Progress^^ | - To understand the key components of SimCLR framework <br> - Setting up a baseline for model experimentation on a dataset | [**Links**]({{ research.note04 }}) | [**Links**]({{ research.mate02 }}) | N/A |
+| Deadline | Name | Status | Description | Research Paper | Resources |
+| :------- | :--- | :----: | :---------- | :------------: | :-------: |
+| 2024/09/16 - 2024/11/16 | Ensemble Learning for Cervical Cancer Cytology | :material-check-all: | (--) Research ensemble learning methods for cervical cancer <br> (--) Compare the performance between individual and ensemble model | N/A | [**[Slides]**]({{ research.note01 }}){:target="_blank"} [**[Code]**](){:target="_blank"} |
+| 2024/09/23 | Methods for Preprocessing and Data Split for Multi-Classification | :material-check-all: | (--) Research the preprocessing and data split techniques <br> (--) Implementation these methods on cervical cancer datasets | N/A | [**[Slides]**]({{ research.note02 }}){:target="_blank"} |
+2025/01/06 - 2025/01/13 | Self-Supervised Model Learning | ==Progress== | (--) Overview the Self-Supervised Learning: Introduction/Methods/Evaluation <br> (--) Introduction to the outstanding model of Self-Supervised Learning: SimCLR  <br> (--) Implementation and evaluation the performance of model on cervical cancer datasets | [**[PP01]**]({{ research.mate02 }}){:target="_blank"} [**[PP02]**]({{ research.mate03 }}){:target="_blank"} | [**[Notes]**]({{ research.note03 }}){:target="_blank"} |
 
 
 ## :octicons-link-16: Quick Links
 
-Including quick links folder of project like **slides**, **notes**, **material** and **code**: 
+Including quick links folder of project: **Resources** and **Research Paper**  
 
-[Slides & Note :paperclips:](https://){.md-button} 
+[Resources :paperclips:](https://){.md-button} 
 
-[Materials :material-file-document-outline:](https://){.md-button}
+[Research Paper :material-file-document-outline:](https://){.md-button}
 
 
 ## :material-database-settings: Datasets
