@@ -15,10 +15,11 @@ icon: material/numeric-1-circle
 
 | Deadline | Name | Status | Description | Paper Links | Resources |
 | :------- | :--- | :----: | :---------- | :------------: | :-------: |
-| 2024/09/16 - 2024/11/16 | Ensemble Learning for Cervical Cancer Cytology | :material-check-all: | (--) Researching ensemble learning methods for cervical cancer <br> (--) Compare the performance between individual and ensemble model | N/A | [**[Slides]**]({{ research.note01 }}){:target="_blank"} [**[Code]**](){:target="_blank"} |
-| 2024/09/23 | Methods for Preprocessing and Data Split for Multi-Classification | :material-check-all: | (--) Researching the preprocessing and data split techniques <br> (--) Implementation these methods on cervical cancer datasets | N/A | [**[Slides]**]({{ research.note02 }}){:target="_blank"} |
-2025/01/06 - 2025/01/13 | Self-Supervised Model Learning | ^^**Progress**^^ | (--) Overview the Self-Supervised Learning Topic <br> (--) Introduction to the outstanding model of Self-Supervised Learning: SimCLR <br> (--) Researching the aspects of SimCLR model: architecture, I-O data, loss function, fine-tune strategies, etc. | [**[PP01]**]({{ research.mate02 }}){:target="_blank"} [**[PP02]**]({{ research.mate03 }}){:target="_blank"} | [**[Notes]**]({{ research.note03 }}){:target="_blank"} |
-
+| 2024/09/16 - 2024/11/16 | Ensemble Learning for Cervical Cancer Cytology | :material-check-all: | (--) Researching ensemble learning methods for cervical cancer. <br> (--) Compare the performance between individual and ensemble model. | N/A | [**[Slides]**]({{ research.note01 }}){:target="_blank"} [**[Code]**](){:target="_blank"} |
+| 2024/09/23 | Methods for Preprocessing and Data Split for Multi-Classification | :material-check-all: | (--) Researching the preprocessing and data split techniques. <br> (--) Implementation these methods on cervical cancer datasets. | N/A | [**[Slides]**]({{ research.note02 }}){:target="_blank"} |
+| 2025/01/06 - 2025/01/13 | Self-Supervised Model Learning | :material-check-all: | (--) Overview the Self-Supervised Learning topic. <br> (--) Introduction to the outstanding model of Self-Supervised Learning: SimCLR. <br> (--) Researching the aspects of SimCLR model: architecture, I-O data, loss function, fine-tune strategies, etc. | [**[PP01]**]({{ research.mate02 }}){:target="_blank"} [**[PP02]**]({{ research.mate03 }}){:target="_blank"} | [**[Notes]**]({{ research.note03 }}){:target="_blank"} |
+| 2025/01/06 - 2025/01/13 | Implementation SimCLR Model (Part 1) | ^^**Progress**^^ | (--) Building and designing the SimCLR model: backbone, loss function, fine-tuning, augmentation techniques, etc. <br> (--) Conduct quick experiments and evaluations on a small subset of the cervical cancer dataset. | N/A | {++Pending++} | 
+| 2025/01/06 - 2025/01/13 | Implementation SimCLR Model (Part 2) | :material-close: | (--) Expand experiments on various strategies and approaches: transfer learning, fine-tuning. <br> (--) Conduct detailed evaluations of the results and compare the effectiveness of different methods. | N/A | {++Pending++} | 
 
 ## :octicons-link-16: Quick Links
 

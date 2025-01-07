@@ -132,6 +132,5 @@ Perform fine-tuning on the model that has the best performance after evaluation 
 
 - Fine-tune the model sequentially with different proportions of labeled data (10%, 20%, 30%, 40%, 50%) and evaluate its performance.
 
-
 ---
 <br>
