@@ -14,15 +14,15 @@
 
     Focus on **Deep Learning** and **Machine Learning** techniques for classification, detection and segmentation in cervical cancer cytology
 
-    [:octicons-arrow-right-24: Getting started](cervical-cancer-research)
+    [:octicons-arrow-right-24: **Getting started**](../research-logs/cervical-cancer-cytology.md)
 
--   :tools:{ .lg .middle } __Data Labeling Tool__
+-   :tools:{ .lg .middle } __3D Object Recognition and Reconstruction__
 
     ---
 
     Survey and research on platforms and tools supporting medical labeling
 
-    [:octicons-arrow-right-24: Getting started](labeling-tool-research)
+    [:octicons-arrow-right-24: **Getting started**](../research-logs/3d-object-recognition-and-reconstruction.md)
 
 
 </div>

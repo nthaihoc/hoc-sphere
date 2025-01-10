@@ -61,6 +61,11 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format  
 
 plugins:
   - macros
@@ -72,7 +77,7 @@ nav:
   - About Hoc: index.md
   - Hoc's Research Logs:
     - research-logs/index.md
-    - Cervical Cancer Research: research-logs/cervical-cancer-research.md
+    - Cervical Cancer Cytology: research-logs/cervical-cancer-cytology.md
 
   - Hoc's Course Notes:
     - course-notes/index.md
@@ -93,10 +98,9 @@ extra:
     lec02: https://drive.google.com/drive/folders/1-pePMyNJuVEXeTV1Nq1zQpGTNm0K3MGo?usp=drive_link
     code02: https://www.kaggle.com/code/nguyenthaihoc/01-linear-regression-gradient-descent
   research:
-    note01: https://drive.google.com/file/d/1TWiV47dTB1ORqoYCq-1OpJlGwK75YSgW/view?usp=sharing
-    note02: https://drive.google.com/file/d/1yLjUqDO58RPgVt6e0-n0HegZJhBKBpbd/view?usp=drive_link
-    note03: ccr-notes/note01.md
+    slide01: https://drive.google.com/file/d/1TWiV47dTB1ORqoYCq-1OpJlGwK75YSgW/view?usp=sharing
+    slide02: https://drive.google.com/file/d/1yLjUqDO58RPgVt6e0-n0HegZJhBKBpbd/view?usp=drive_link
     
-    mate01: 
+    mate01: None 
     mate02: https://arxiv.org/pdf/2002.05709
     mate03: https://arxiv.org/pdf/2006.10029

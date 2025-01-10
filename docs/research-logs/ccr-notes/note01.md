@@ -1,4 +1,4 @@
-# Self-Supervised Learning Model: A Simple Framework for Contrastive Learning of Visual Representations
+# :material-note-edit-outline: Self-Supervised Learning Model: A Simple Framework for Contrastive Learning of Visual Representations
 ---
 
 ## Outlines
