@@ -98,9 +98,9 @@ extra:
     lec02: https://drive.google.com/drive/folders/1-pePMyNJuVEXeTV1Nq1zQpGTNm0K3MGo?usp=drive_link
     code02: https://www.kaggle.com/code/nguyenthaihoc/01-linear-regression-gradient-descent
   research:
-    slide01: https://drive.google.com/file/d/1TWiV47dTB1ORqoYCq-1OpJlGwK75YSgW/view?usp=sharing
-    slide02: https://drive.google.com/file/d/1yLjUqDO58RPgVt6e0-n0HegZJhBKBpbd/view?usp=drive_link
-    
+    resources: https://nthaihoc.github.io/hoc-sphere/research-logs/ccr-slides/
+    slide01: None
+        
     mate01: None 
     mate02: https://arxiv.org/pdf/2002.05709
     mate03: https://arxiv.org/pdf/2006.10029
