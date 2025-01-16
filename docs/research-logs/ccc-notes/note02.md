@@ -92,23 +92,102 @@ The $\tau$ parameter plays a crucial role in controlling how the model distingui
 
 {++b/ Manual calculation example++}
 
-Suppose we have a data set $x = [x_1, x_2]$ as inputs. After applying augmentation techniques, the resulting augmented set becomes $x = [x_{1i}, x_{1j}, x_{2i}, x_{2j}]$.
+Suppose we have a data set $x = [x_1, x_2]$ as inputs. With batch size of 2, after applying augmentation techniques, two augmented views are generated: $v_1 = [x_{1i}, x_{2i}]$ and $v_2 = [x_{1j}, x_{2j}]$, where each view represents a different augmentation of the corresponding input data. 
 
-- Stage 01: Filter the positive pairs, the result includes 2 positive pairs $(x_{1i}, x_{1j}); (x_{2i}, x_{2j})$. 
-- Stage 02. Suppose we have a matrix cosine similarity for all examples.
+Positive pairs is $(x_{1i}, x_{1j})$; $(x_{2i}, x_{2j})$. Below, cosine similarity matrix of all the examples.
 
-|      | $x_{1i}$ | $x_{1j}$ | $x_{2i}$ | $x_{2j}$|
-| :--: | :------: | :------: | :------: | :-----: |
-| $x_{1i}$ |   1  |   0.63   |    0.77  |    0.70 |
-| $x_{1j}$ | 0.63 |     1    |    0.67  |    0.84 |
-| $x_{2i}$ | 0.77 |    0.67  |     1    |    0.64 |
-| $x_{2j}$ | 0.70 |    0.84  |    0.64  |    1    |
+|      | $x_{1i}$ | $x_{2i}$ | $x_{1j}$ | $x_{2j}$| 
+| :--: | :------: | :------: | :------: | :-----: | 
+| $x_{1i}$ | 1 | 0.63 | 0.77 | 0.70 |
+| $x_{2i}$ | 0.63 | 1 | 0.67 | 0.84 | 
+| $x_{1j}$ | 0.77 | 0.67 | 1 | 0.64 |
+| $x_{2j}$ | 0.70 | 0.84 | 0.64 | 1 |
 
+- Stage 01: Filter the value cosine similarity of positive pairs: $(x_{1i}, x_{1j}) = (x_{1j}, x_{1i}) =0.77$, $(x_{2i}, x_{2j}) = (x_{2j}, x_{2i}) = 0.84$ and throw away the diagonal of cosine similarity matrix are always 1. With $\tau = 1$, a new cosine similarity matrix is created below.
 
+|      | $x_{1i}$ | $x_{2i}$ | $x_{1j}$ | $x_{2j}$| 
+| :--: | :------: | :------: | :------: | :-----: | 
+| $x_{1i}$ | - | 0.63 | - | 0.70 |
+| $x_{2i}$ | 0.63 | - | 0.67 | - | 
+| $x_{1j}$ | - | 0.67 | - | 0.64 |
+| $x_{2j}$ | 0.70 | - | 0.64 | - |
 
+- Stage 02: Combine the positive pairs and negative pairs. 
 
+|   | $x_{1i}$ | $x_{2i}$ | $x_{1j}$ | $x_{2j}$| 
+| :--: | :------: | :------: | :------: | :-----: | 
+| $(x_{1i}, x_{1j})=0.77$ | - | 0.63 | - | 0.70 |
+| $(x_{1j}, x_{1i})=0.77$ | 0.63 | - | 0.67 | - | 
+| $(x_{2i}, x_{2j})=0.84$ | - | 0.67 | - | 0.64 |
+| $(x_{2j}, x_{2i})=0.84$ | 0.70 | - | 0.64 | - |
+ 
+- Stage 03: Applying the softmax function to transform the cosine similarity values into probabilities.Consider the positive pairs as label 0, and the rest as label 1. 
+
+$$
+S(z_i) = \frac{e^{z_i}}{\sum_{j=1}^{K} e^{z_j}}
+$$
+
+Where:
+
+- $e$: is represents the exponential of the logit
+- $K$: is the number of classes
+
+Compute the softmax values for each row in the matrix.
+
+=> $S_{r1} = \left [\frac{e^{0.77}}{e^{0.63} + e^{0.77} + e^{0.70}}; \frac{e^{0.63}}{e^{0.63} + e^{0.77} + e^{0.70}}; \frac{e^{0.7}}{e^{0.63} + e^{0.77} + e^{0.70}} \right] = [0.3569; 0.3103; 03328]$
+
+Similarly, compute the softmax values for the remaining rows in the matrix. The vector $[0.3569; 0.3103; 0.3328]$ consists of softmax values, with the first element being the probability of the positive pair. Therefore, by applying cross-entropy, we can calculate the loss for each positive pair.
+
+=> $l(x_{1i}, x_{1j}) = -\log(0.3569) = -1.0303$
+
+Conduct computation of the loss for the remaining positive pairs. Finally, the loss function on the batch is:
+
+=> $\mathcal{L} = \frac{1}{4} \left[l(x_{1i}, x_{1j}) + l(x_{1j}, x_{1i}) + l(x_{2i}, x_{2j}) + l(x_{2j}, x_{2i})   \right]$
 
 ## III. LARS Optimizer
+
+==**(+) What is LARS optimizer ?**==
+
+LARS (Layer-wise Adaptive Rate Scaling) is an optimization algorithm, specifically designed for the training large-scale deep learning models, particularly in scenarios involving large-batch training. It addresses issues related to non-uniform learning rates across layers, ensuring faster convergence and improved stability during training.
+
+When the training large-scale models with large-batch, the ratio between the norm of weights and gradients varies significantly across layers. Besides slow or unstable convergence. To address these problems, LARS introduces layer-wise learning rate, which are adapted for layer based on the relative magnitudes of the weights and gradients. 
+
+==**(+) LARS optimizer works**==
+
+At each layer $l$, the weights of the model updated by LARS as follows:
+$$
+\Delta w_{t}^{l} = \gamma \cdot \lambda^{l} \cdot \nabla L(w_{t}^{l})
+$$
+
+where $\gamma$ is a global learning rate and $\lambda^{l}$ is a local learning rate, defined for each layer through $\eta$ (trust coefficient $\eta$ < 1):
+$$
+\lambda^{l} = \eta \cdot \frac{||w^l||}{||\nabla L(w^l)||}
+$$
+
+LARS can be used to balance the local learning rate and the weight decay term $\beta$, and then applied to the update process, then $\lambda^{l}$ is defined:
+$$
+\lambda^{l} = \frac{||w^{l}||}{||\nabla L(w^l)|| + \beta \cdot ||w^{l}||}
+$$
+
+Momentum helps prevent the weights from updating too rapidly and reduces oscillations during optimization. The momentum for layer $l$ at step $t+1$ is updated as follows:
+$$
+v_{t+1}^{l} = \mu \cdot v_{t}^{l} + \gamma_{t+1} \cdot \lambda^{l} \cdot (||\nabla L(w_{t}^{l})|| + \beta w_{t}^{l})
+$$
+
+Where:
+
+- $v_{t+1}^{l}$ is the momentum at step $t+1$ for layer $l$.
+- $\mu$ is the momentum factor, typically between 0 and 1.
+- $v_{t}^{l}$ is the momentum at the current step $t$ for layer $l$.
+- $\gamma_{t+1}$ is the local learning rate at step $t+1$.
+- $\nabla L(w_{t}^{l})$ is the gradient of the loss $L$ with respect to the weights $w_{t}^{l}$ at step $t$.
+- $\beta w_{t}^{l}$ is the weight decay term (L2 regularization).
+
+
+
+
+
+
 
 ---
 <br>
