@@ -184,10 +184,5 @@ Where:
 - $\beta w_{t}^{l}$ is the weight decay term (L2 regularization).
 
 
-
-
-
-
-
 ---
 <br>

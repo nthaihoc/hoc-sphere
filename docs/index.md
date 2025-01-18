@@ -6,25 +6,14 @@ hide:
 # :heart: Welcome to HocSphere :heart:
 ---
 
-## About Me
+Hello! I’m Hoc, an AI engineer and researcher at the **Institute of Applied Science and Technology**, under **Thai Nguyen University of Information and Communication Technology**. My research focuses on applying machine learning and computer vision to healthcare, where I develop and implement end-to-end AI solutions. In addition to healthcare, I’m passionate about exploring cutting-edge AI techniques for diverse challenges, including 3D applications, autonomous vehicles, and big data processing. For more information, please refer to [**website**](https://nthaihoc.github.io/about-me).
 
-Hello, my name is Hoc. I am a **Machine Learning** and **Computer Vision** engineer. Currently, I am a researcher at the **Institute of Applied Science and Technology (IAST)** in Thai Nguyen, where my work focuses on researching **Machine Learning** and **Deep Learning** techniques and advancing computer vision applications in **healthcare** and **3D imaging**. My goal is to leverage AI and computer vision to create impactful solutions that enhance medical diagnostics and patient care. For more information, please refer to [**my website**](https://nthaihoc.github.io/about-me).
+**HocSphere** is a platform I created to store and share knowledge. It serves as a centralized space where I gather research materials, document personal insights, and explore a wide range of content—all with a focus on the ever-evolving field of AI. I hope this space becomes a valuable resource and the place where you find exactly what you're looking for.
 
 <figure markdown="span">
-        ![Image title](assets/avt.jpg){ width="300" }
-<figcaption>This is a picture of me attending the ICTA 2024 conference</figcaption>
+        ![Image title](assets/avt.jpg){ width=100% }
+<figcaption></figcaption>
 </figure>
 
-## Purpose
-
-This website is built with the purpose of creating an integrated space where I can record and share study notes, weekly research, and team work schedules. I want this website to become a platform for storing academic materials and work tasks, while encouraging interaction and collaboration among team members. By providing space for scientific notes, research projects, and team work plans, this website will support me and my colleagues in optimizing the learning and working process. It is a place where I gather ideas, share knowledge, and track research progress, thus contributing to fostering creativity and efficiency in team work.
-
-
-## Contact
-
-Everyone can contact me through the following information:
-
-- :material-phone: **Phone**: {++0834265442++}  
-- :material-email-outline: **Email**: [{++thaihoc.ictu@gmail.com++}](mailto:thahoc.ictu@gmail.com)
-
+---
 <br />

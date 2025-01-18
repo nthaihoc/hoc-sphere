@@ -74,7 +74,7 @@ plugins:
 copyright: Copyright by Nguyen Thai Hoc
 
 nav:
-  - About Hoc: index.md
+  - Introduction: index.md
   - Hoc's Research Logs:
     - research-logs/index.md
     - Cervical Cancer Cytology: research-logs/cervical-cancer-cytology.md
