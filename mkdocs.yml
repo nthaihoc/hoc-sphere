@@ -1,5 +1,7 @@
+# 01. setup title with the name of the site
 site_name: HocSphere
 
+# 02. setup logo, icon, format, etc.
 theme:
   favicon: assets/eagle.png
   palette:
@@ -26,6 +28,7 @@ theme:
   logo: assets/eagle.png
   features:
     - navigation.tabs
+    - navigation.instant
     - navigation.tabs.sticky
     - navigation.indexes
     - search.suggest
@@ -45,6 +48,7 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
+# 03. setup markdown extensions
 markdown_extensions:
   - abbr
   - admonition
@@ -80,6 +84,7 @@ plugins:
 
 copyright: Copyright & copy; 2025 Thai Hoc Nguyen
 
+# 04. setup navigation
 nav:
   - Introduction: index.md
   - Hoc's Research Logs:
@@ -102,6 +107,7 @@ nav:
   - Hoc's Resources: 
     - resources/index.md
 
+# 05. setup other configurations
 extra:
   social:
     - icon: octicons/mail-16
