@@ -33,6 +33,8 @@ theme:
     - header.autohide
     - navigation.top
     - navigation.footer
+    - content.action.edit
+    - content.action.view
 
 repo_url: https://github.com/nthaihoc/hoc-sphere
 
@@ -69,8 +71,9 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format  
-
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
 plugins:
   - macros
   - search
@@ -112,7 +115,7 @@ extra:
       name: University of Information and Communication Technology
   analytics:
     provider: google
-    property: G-S3GEPQ874N
+    property: UA-XXXXXXXX-X
   csml:
     lec02: https://drive.google.com/drive/folders/1-pePMyNJuVEXeTV1Nq1zQpGTNm0K3MGo?usp=drive_link
     code02: https://www.kaggle.com/code/nguyenthaihoc/01-linear-regression-gradient-descent
