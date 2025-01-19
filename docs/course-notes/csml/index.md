@@ -23,38 +23,23 @@ algorithms for regression (like Linear and Lasso Regression) and classification 
 
 ## IV. Lecture Schedule
 
-| Lecture | Title | Notes | Code |
-| :-----: | :---- | :---: | :--: |
-| 01 | Introduction to Artificial Intelligence and Machine Learning Basic Concepts | - | - |
-| 02 | Regression Analysis and Regression Algorithm | [Links]({{ csml.lec02 }}){:target="_blank"} | [Links]({{ csml.code02 }}){:target="_blank"} |
-| 03 | Classification and Logistic Regression Algorithms | - | - |
-| 04 | Data Split, Cross-Validation, Bias-Variance Trade-off, Regularization, Model/Feature Selection and Problems in Machine Learning | - | - |
-| 05 | Naive Bayes Classifier Algorithms | - | - |
-| 06 | Support Vector Machine Algorithms | - | - |
-| 07 | Decision Tree Algorithms | - | - |
-| 08 | Ensemble Method and Random Forest Algorithms | - | - |
-| 09 | Dimensionality Reduction Techniques and Principal Component Analysis Algorithms | - | - |
-| 10 | Unsupervised Learning Techniques, K-Measn Clustering Algorithms and Gaussian Mixture Model | - | - |
+| Lecture | Title | Status | Resources |
+| :-----: | :---- | :----: | :-------: |
+| 01 | Introduction to Artificial Intelligence and Machine Learning Basic Concepts | :material-close: | :material-close: |
+| 02 | Regression Analysis and Regression Algorithm | :material-close: | :material-close: |
+| 03 | Classification and Logistic Regression Algorithms | :material-close: | :material-close: |
+| 04 | Data Split, Cross-Validation, Bias-Variance Trade-off, Regularization, Model/Feature Selection and Problems in Machine Learning | :material-close: | :material-close: |
+| 05 | Naive Bayes Classifier Algorithms | :material-close: | :material-close: |
+| 06 | Support Vector Machine Algorithms | :material-close: | :material-close: |
+| 07 | Decision Tree Algorithms | :material-close: | :material-close: |
+| 08 | Ensemble Method and Random Forest Algorithms | :material-close: | :material-close: |
+| 09 | Dimensionality Reduction Techniques and Principal Component Analysis Algorithms | :material-close: | :material-close: |
+| 10 | Unsupervised Learning Techniques, K-Measn Clustering Algorithms and Gaussian Mixture Model | :material-close: | :material-close: |
 
 
-## V. Resource
+## V. Acknowledgments
 
-### {++1. Book++}
-* [Machine Learning Basic - Vu Huu Tiep](https://drive.google.com/file/d/1QUGAEW4nHivTr1ucW7JklayThV2JdOYk/view?usp=sharing).
-
-* [Design Machine Learning System - Chip Huyen](https://drive.google.com/file/d/1j0qaLTGOhLDFjOPO-xMnsSQfaHaPvH-O/view?usp=sharing).
-
-* [Pattern Recognition and Machine Learning - Bishop](https://drive.google.com/file/d/1x_gEQ0_Y3iVS8mYFBMAMJqHBUWqTSdVB/view?usp=sharing).
-
-* [Hands-On Machine Learning with Scikit-Learn & Tensorflow - Aurélien Géron](https://drive.google.com/file/d/10-JBTdruL5iIAWNQxPpYKjcWS6E2uszY/view?usp=sharing).
-
-
-### {++2. Courses++}
-* [Stanford CS229: Machine Learning Course Autumn 2018 - Andrew Ng](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU).
-
-* [Stanford CS229: Machine Learning Course Summer 2019 - Anand Avati](https://www.youtube.com/playlist?list=PLoROMvodv4rNH7qL6-efu_q2_bPuy0adh).
-
-* [Stanford CS229: Machine Learning Spring 2022 - Tengyu Ma and Christopher Ré](https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy).
-
+I would like to express my heartfelt gratitude to two authors: **Andrew Ng**, the creator of the [**CS229 Machine Learning**](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU) course, and **Aurélien Géron**, the author of the book [**Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow**](https://drive.google.com/file/d/10-JBTdruL5iIAWNQxPpYKjcWS6E2uszY/view?usp=sharing). Their work has been a tremendous source of inspiration and motivation for me to create these lecture notes. 
 
 ---
+</br>

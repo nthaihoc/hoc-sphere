@@ -32,6 +32,7 @@ theme:
     - toc.integrate
     - header.autohide
     - navigation.top
+    - navigation.footer
 
 repo_url: https://github.com/nthaihoc/hoc-sphere
 
@@ -43,6 +44,9 @@ extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 markdown_extensions:
+  - abbr
+  - admonition
+  - def_list
   - md_in_html
   - attr_list
   - footnotes
@@ -71,7 +75,7 @@ plugins:
   - macros
   - search
 
-copyright: Copyright by Nguyen Thai Hoc
+copyright: Copyright & copy; 2025 Thai Hoc Nguyen
 
 nav:
   - Introduction: index.md
@@ -91,6 +95,16 @@ nav:
     - resources/index.md
 
 extra:
+  social:
+    - icon: octicons/mail-16
+      link: mailto:<thaihocit02@gmail.com>
+      name: Email
+    - icon: material/web
+      link: https://nthaihoc.github.io/about-me
+      name: Author
+    - icon: simple/workplace
+      link: https://ictu.edu.vn
+      name: University of Information and Communication Technology
   analytics:
     provider: google
     property: G-S3GEPQ874N
