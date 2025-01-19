@@ -91,6 +91,11 @@ nav:
       - Regression Analysis and Regression Algorithm: course-notes/csml/lecture02.md
   - Hoc's Playbook:
     - playbook/index.md
+    - Data Structures and Algorithms: playbook/data-structure-and-algorithm.md
+    - Linear Algebra: playbook/linear-algebra.md
+    - Calculus: playbook/calculus.md
+    - Probability and Statistics: playbook/probability-and-statistic.md
+
   - Hoc's Resources: 
     - resources/index.md
 

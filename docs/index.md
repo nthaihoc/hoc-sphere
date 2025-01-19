@@ -11,7 +11,7 @@ Hello! I’m Hoc, an AI engineer and researcher at the **Institute of Applied Sc
 **HocSphere** is a platform I created to store and share knowledge. It serves as a centralized space where I gather research materials, document personal insights, and explore a wide range of content—all with a focus on the ever-evolving field of AI. I hope this space becomes a valuable resource and the place where you find exactly what you're looking for.
 
 <figure markdown="span">
-        ![Image title](assets/avt.jpg){ width=100% }
+        ![Image title](assets/avt.jpg){ width=88% }
 <figcaption></figcaption>
 </figure>
 
