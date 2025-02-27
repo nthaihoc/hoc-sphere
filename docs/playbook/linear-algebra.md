@@ -2,14 +2,14 @@
 icon: material/numeric-2-circle
 ---
 
----
 <figure markdown="span">
         ![Image title](../assets/linear-algebra.jpg){ width=88% }
 <figcaption></figcaption>
 </figure>
 
-## i. Overview
 ---
+## i. Overview
+
 This collection of notes provides a comprehensive overview of Linear Algebra, covering fundamental concepts essential for understanding machine learning, data science, and mathematics. Topics include:
 
 - Vectors and Vector Spaces: Basic building blocks and their properties.
@@ -19,9 +19,8 @@ This collection of notes provides a comprehensive overview of Linear Algebra, co
 
 Linear Algebra is crucial for many AI algorithms and data analysis tasks. These notes summarize the core principles and applications, offering both theoretical and practical insights.
 
-
-## ii. Knowledge Base
 ---
+## ii. Knowledge Base
 
 | No.  | Title | Description | Status | Resources |
 | :--: | :---: | :---------- | :----: | :-------: |
@@ -29,6 +28,5 @@ Linear Algebra is crucial for many AI algorithms and data analysis tasks. These 
 
 
 ## iii. Resources
----
 
 </br>
