@@ -23,19 +23,20 @@ algorithms for regression (like Linear and Lasso Regression) and classification 
 
 ## IV. Lecture Schedule
 
-| Lecture | Title | Status | Resources |
-| :-----: | :---- | :----: | :-------: |
-| 01 | Introduction to Artificial Intelligence and Machine Learning Basic Concepts | :material-close: | :material-close: |
-| 02 | Regression Analysis and Regression Algorithm | :material-close: | :material-close: |
-| 03 | Classification and Logistic Regression Algorithms | :material-close: | :material-close: |
-| 04 | Data Split, Cross-Validation, Bias-Variance Trade-off, Regularization, Model/Feature Selection and Problems in Machine Learning | :material-close: | :material-close: |
-| 05 | Naive Bayes Classifier Algorithms | :material-close: | :material-close: |
-| 06 | Support Vector Machine Algorithms | :material-close: | :material-close: |
-| 07 | Decision Tree Algorithms | :material-close: | :material-close: |
-| 08 | Ensemble Method and Random Forest Algorithms | :material-close: | :material-close: |
-| 09 | Dimensionality Reduction Techniques and Principal Component Analysis Algorithms | :material-close: | :material-close: |
-| 10 | Unsupervised Learning Techniques, K-Measn Clustering Algorithms and Gaussian Mixture Model | :material-close: | :material-close: |
-
+| Lecture | Title | Description | Status | Resources |
+| :-----: | :---- | :---------- | :----: | :-------: |
+|    01   | Introduction to AI and Machine Learning | (-) Overview of AI and Machine Learning <br> (-) Types of Machine Learning <br> (-) Real-world applications of Machine Learning | | |
+|    02   | Regression Analysis | (-) Linear Regression <br> (-) Multiple Linear Regression <br> (-) Polynomial Regression | | |
+|    03   | Classification Algorithms | (-) Logistic Regression <br> (-) Performance metrics: Precision, Recall, F1-score, AUC-ROC | | |
+|    04   | Model Evaluation & Regularization | (-) Train-Test split & Cross validation <br> (-) Bias-Variance trade-off <br> (-) Regularization techniques: L1, L2 | | | 
+|    05   | Naive Bayes Classifier | (-) Bayes theorem & Naive Bayes assumptions <br> (-) Gaussian, multinomial and Bernoulli Naive Bayes | | |
+|    06   | Support Vector Machine | (-) SVM intuition & mathematics <br> (-) Kernel trick: Linear & Non-linear SVM | | |
+|    07   | Decision Tree | (-) Decision Tree structure <br> (-) Entropy, gini impurity | | |
+|    08   | Ensemble Methods | (-) Random Forest algorithm <br> (-) Ensemble learning techniques: Bagging vs. Booting vs. Stacking | | |
+|    09   | Dimensionality Reduction Techniques | (-) Principal Component Analysis <br> (-) Singular Value Decomposition | | |
+|    10   | Unsupervised Learning & Clustering | (-) K-Means Clustering <br> (-) Gaussian Mixture Models | | |
+|    11   | Feature Engineering & Data Preprocessing | (-) Handling missing data <br> (-) Feature scaling & encoding <br> (-) Feature selection & extraction | | |
+|    12   | Hyperparameter Tuning & Model Optimization | (-) Grid search, Random Search, Bayesian optimization <br> (-) Learning rate schedulers | | | 
 
 ## V. Acknowledgments
 

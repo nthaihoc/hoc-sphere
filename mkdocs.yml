@@ -97,6 +97,8 @@ nav:
       - course-notes/csml/index.md
       - Introduction Intelligence Artificial and Machine Learning Basics: course-notes/csml/lecture01.md
       - Regression Analysis and Regression Algorithm: course-notes/csml/lecture02.md
+    - Deep Learning Course:
+      - course-notes/csdl/index.md
   - Hoc's Playbook:
     - playbook/index.md
     - Data Structures and Algorithms: playbook/data-structure-and-algorithm.md
