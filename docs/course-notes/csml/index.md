@@ -1,5 +1,10 @@
-# :fontawesome-solid-graduation-cap: Course Information
 ---
+icon: material/numeric-1-circle
+---
+
+# :fontawesome-solid-graduation-cap: Machine Learning Course
+---
+
 
 ## I. Description
 This course provides knowledge on artificial intelligence, with a particular focus on machine learning. Learners will gain a solid understanding of core machine learning concepts, including key algorithms for supervised and unsupervised learning, as well as widely-used techniques in the field. The course also guides learners on how to comprehensively set up, implement, and evaluate models, helping them understand the full process of building a machine learning system from start to finish.

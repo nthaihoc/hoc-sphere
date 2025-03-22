@@ -1,4 +1,8 @@
-# :fontawesome-solid-graduation-cap: Course Information
+---
+icon: material/numeric-2-circle
+---
+
+# :fontawesome-solid-graduation-cap: Deep Learning Course
 ---
 
 ## I. Description
@@ -34,7 +38,7 @@ To take this course, you should have a basic understanding of Python programming
 
 ## V. Acknowledgements
 
-This course is inspired by the collective knowledge and contributions of the deep learning community. I would like to extend my gratitude to researchers, educators and institutions whose work has shaped modern AI, including [Stanford CS230 - Deep Learning (Andrew Ng)](http://cs230.stanford.edu/syllabus/), and key research papers on neural networks, transformers and generative models.
+This course is inspired by the collective knowledge and contributions of the deep learning community. I would like to extend my gratitude to researchers, educators and institutions whose work has shaped modern AI, including [**Stanford CS230 - Deep Learning (Andrew Ng)**](http://cs230.stanford.edu/syllabus/), and key research papers on neural networks, transformers and generative models.
 
 ---
----
+<br>
