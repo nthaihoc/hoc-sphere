@@ -36,3 +36,4 @@ To take this course, you should have a basic understanding of Python programming
 
 This course is inspired by the collective knowledge and contributions of the deep learning community. I would like to extend my gratitude to researchers, educators and institutions whose work has shaped modern AI, including [Stanford CS230 - Deep Learning (Andrew Ng)](http://cs230.stanford.edu/syllabus/), and key research papers on neural networks, transformers and generative models.
 
+---
