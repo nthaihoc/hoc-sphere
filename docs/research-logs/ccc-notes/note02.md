@@ -3,11 +3,9 @@
 
 ## Outlines
 
-[**I. End-to-End Model Training Process**](#1-end-to-end-model-training-process)
-
-[**II. NT-Xent Loss**](#ii-nt-xent-loss)
-
-[**III. LARS Optimizer**](#iii-lars-optimizer)
+- [**I. End-to-End Model Training Process**](#1-end-to-end-model-training-process)
+- [**II. NT-Xent Loss**](#ii-nt-xent-loss)
+- [**III. LARS Optimizer**](#iii-lars-optimizer)
 
 ---
 ## I. End-to-End Model Training Process

@@ -24,7 +24,7 @@ icon: material/numeric-1-circle
 
 ## :octicons-link-16: Quick Links
 
-Including quick links folder of project: **resources** and **research paper**.
+Including quick links folder of project: {++resources++} and {++research paper++}.
 
 [Resources :paperclips:]({{ research.resources }}){.md-button} 
 

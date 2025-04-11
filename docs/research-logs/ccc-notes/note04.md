@@ -8,6 +8,8 @@
 - [**III. CLIP model (Contrastive Language-Image Pretraining)**](#iii-clip-model-contrastive-language-image-pretraining)
 - [**IV. Flamingo model**](#iv-flamingo-model)
 
+---
+
 ## I. The problem
 ## II. Overview of the VLM
 ## III. CLIP model (Contrastive Language-Image Pretraining)
@@ -63,5 +65,4 @@ $$P_{i} = \frac{e^{logit_i / \tau}}{\sum_{j}e^{logit_j / \tau}}$$
 ## IV. Flamingo model
 ## V. Experimental strategy for Cervical Cancer Cytology
 
-
-
+---

@@ -16,15 +16,6 @@
 
     [:octicons-arrow-right-24: **Getting started**](../research-logs/cervical-cancer-cytology.md)
 
--   :tools:{ .lg .middle } __3D Object Recognition and Reconstruction__
-
-    ---
-
-    Survey and research on platforms and tools supporting medical labeling
-
-    [:octicons-arrow-right-24: **Getting started**](../research-logs/3d-object-recognition-and-reconstruction.md)
-
-
 </div>
 
 

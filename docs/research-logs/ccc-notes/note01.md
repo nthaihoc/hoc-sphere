@@ -3,11 +3,9 @@
 
 ## Outlines
 
-[**I. Introduction**](#introduction)
-
-[**II. Methods**](#ii-methods)
-
-[**III. Implementation plan**](#iii-implementation)
+- [**I. Introduction**](#introduction)
+- [**II. Methods**](#ii-methods)
+- [**III. Implementation plan**](#iii-implementation)
 
 ---
 ## I. Introduction
