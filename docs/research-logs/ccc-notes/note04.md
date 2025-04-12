@@ -62,6 +62,27 @@ Devide the logits by a temperature ($\tau$) coefficient. Then pass it through so
 
 $$P_{i} = \frac{e^{logit_i / \tau}}{\sum_{j}e^{logit_j / \tau}}$$
 
+==**3. Evaluation zero-shot CLIP**==
+
+**Objectives:** The main goal is to evaluate the quality of the representation learned by CLIP during its large-scale pre-training.
+
+**More specifically:**
+
+- {++Logistic Regression = Supervised baseline:++}
+    - Logistic Regression is trained features extracted from a standard backbone (ResNet50, v.v), using labeled training.
+    - It represents a simple and standard supervised learning baseline, commonly used to evaluate learned representations. 
+- {++CLIP zero-shot = No training on the new datasets:++}
+    - CLIP doesn't require fine-tuning or labels from the new dataset.
+    - It simply matches image features with text embedding using cosine similarity.
+    - Predictions is done directly using ís knowledge CLIP learned during pre-training.
+
+==**4. Limitations**==
+
+CLIP also struggles on some tasks, especially:
+
+- Fine-grained classification, like telling apart car models, flower species, or airplane types.
+- Abstract or systematic tasks, like counting objects in an image.
+- New or uncommon tasks that probably weren't in CLIP's training set. 
 ## IV. Flamingo model
 ## V. Experimental strategy for Cervical Cancer Cytology
 
