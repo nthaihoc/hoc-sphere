@@ -5,14 +5,14 @@
 
 - [**I. The problem**](#i-the-problem)
 - [**II. Overview of the VLM**](#ii-overview-of-the-vlm)
-- [**III. CLIP model (Contrastive Language-Image Pretraining)**](#iii-clip-model-contrastive-language-image-pretraining)
-- [**IV. Flamingo model**](#iv-flamingo-model)
+- [**III. CLIP model (Contrastive Language-Image Pre-training)**](#iii-clip-model-contrastive-language-image-pretraining)
+- [**IV. BLIP model (Bootstrapping Language-Image Pre-training)**](#iv-blip-model-bootstrapping-language-image-pre-training)
 
 ---
 
 ## I. The problem
 ## II. Overview of the VLM
-## III. CLIP model (Contrastive Language-Image Pretraining)
+## III. CLIP model (Contrastive Language-Image Pretraining0)
 ==**1. Overview**==
 
 **Information:** The CLIP model was introduced in Jan, 2020 by OpenAI with paper title {++"Learning Transferable Visual Models from Natural Language Supervision"++}. This is a highlight architecture in combining language and image learning, opening up zero-shot learning for a wide range of computer vision tasks.
@@ -83,7 +83,70 @@ CLIP also struggles on some tasks, especially:
 - Fine-grained classification, like telling apart car models, flower species, or airplane types.
 - Abstract or systematic tasks, like counting objects in an image.
 - New or uncommon tasks that probably weren't in CLIP's training set. 
-## IV. Flamingo model
-## V. Experimental strategy for Cervical Cancer Cytology
+
+## IV. BLIP model (Bootstrapping Language-Image Pre-training)
+
+==**1. Overview**==
+
+Vấn đề: 
+
+- Hạn chế về mô hình: 
+
+    - Encoder-only model (CLIP) chỉ tốt cho việc hiểu văn bản và ảnh, nhưng không phù hợp cho việc sinh văn bản. 
+    - Encoder-Decoder model, tốt cho sinh văn bản nhưng khó áp dụng hiệu quả cho các tác vụ như tìm kiếm ảnh bằng văn bản. 
+
+- Hạn chế về dữ liệu:
+
+    - Các mô hình trước đó chủ yếu dựa vào dữ liệu hình ảnh và văn bản từ web.
+    - Dữ liệu tuy lớn nhưng thường nhiễu và không lý tưởng cho việc huấn luyện.
+
+Mục tiêu: Multimodal mixture of encoder-decoder (MED) được thiết kế linh hoạt có thể hoạt động dưới 3 chế độ. 
+
+- Encoder đơn modal: chỉ xử lý văn bản hoặc ảnh.
+- Image-grounded text encoder: Xử lý văn bản có tham chiếu ảnh.    
+- Image-grounded text-decoder: Sinh văn bản từ ảnh.
+
+Nhiệm vụ: BLIP huấn luyện MED với 3 nhiệm vụ chính:
+
+- Contrastive learning: học cách phân biệt cặp ảnh-văn bản đúng sai
+- Matching: xác định xem một ảnh và văn bản có khớp nhau không
+- Language modeling: sinh văn bản dựa trên nội dung hình ảnh.
+
+==**2. Kiến trúc mô hình**==
+
+Bộ mã hóa ảnh
+
+- Mô hình sử dụng ViT để trích xuất đặc trưng hình ảnh thành các vector embedding
+- Thêm một token đặc biệt [CLS] để đại diện cho toàn bộ đặc trưng hình ảnh.
+
+MED hoạt động ở 3 chế độ:
+
+- Bộ mã hóa đơn modal: Xử lý ảnh và văn bản một cách riêng biệt. Với văn bản dùng mô hình giống như BERT, thêm CLS vào đầu câu để đại diện cho toàn câu.
+- Bộ mã hóa văn bản dựa trên ảnh: Dùng để hiểu kết hợp cả hình và chữ: Thêm lớp Cross-Attetion giữa self-attention và Feed-forward tong mỗi block transformer của văn bản. Thêm token [encode] vào câu văn bản, output của token này sẽ là biển diễn đại diện của cặp ảnh và văn bản.
+- Bộ sinh văn bản dựa trên ảnh: Dùng để tạo ra câu văn dựa trên ảnh, thay các lớp self-attention bằng causal-attention. Thêm [decode] để đánh dấu bắt đầu đoạn sinh và token kết thúc để chỉ điểm dừng.
+
+==**3. Mục tiêu huấn luyện**==
+
+Image-Text Contrastive Loss - ITC:
+
+- Mục tiêu: căn chỉnh không gian đặc trưng giữa bộ biến đổi hỉnh ảnh và bộ biến đổi văn bản, làm cho các cặp ảnh và văn bản dương có biểu diễn giống nhau hơn so với các cặp âm.
+- Dùng momentum encoder và nhãn mềm để xử lý khả năng có mẫu dương tiềm ẩn trong các mẫu âm
+
+Image-Text Matching Loss - ITM:
+
+- Mục tiêu: học biểu diễn đa mô hình thể hiện sự tương quan chi tiết giữa ảnh và văn bản.
+- Sử dụng chiến lược hard negative mining để chọn những cặp âm có độ tương đồng cao để tạo ra mẫu âm khó.
+
+Language Modeling Loss - LM:
+
+- Mục tiêu: tạo văn bản mô tả ảnh bằng cách huấn luyện mô hình sinh văn bản dạng chuỗi.
+- Khác với cách dùng MLM, LM giúp mô hình có khả năng tổng quát hơn trong việc tạo ra mô tả từ hình ảnh.
+
+
+
+
+
 
 ---
+
+
