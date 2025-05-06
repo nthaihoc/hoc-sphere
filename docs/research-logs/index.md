@@ -1,7 +1,7 @@
 # Research Notes
 ---
 
-> ```Research notes - ghi chú nghiên cứu, là nơi tôi tổng hợp lại những ghi chú, kiến thức, và tài liệu được xây dựng từ các dự án thực tế và quá trình tự nghiên cứu cá nhân, nhằm phục vụ việc học tập, phân tích và phát triển giải pháp.```
+> ```Research notes (ghi chú nghiên cứu), tổng hợp lại những ghi chú, kiến thức, và tài liệu được xây dựng từ các dự án thực tế và quá trình tự nghiên cứu cá nhân, nhằm phục vụ việc học tập, phân tích và phát triển giải pháp.```
 
 
 ## :material-list-status: Research Topics
@@ -13,15 +13,16 @@
     ---
     ![](images/datasets.png)
 
-    [^^:octicons-arrow-right-24: Xem thêm^^](../research-logs/cervical-cancer-cytology.md)
+    [**:octicons-arrow-right-24: Xem chi tiết**](../research-logs/cervical-cancer-cytology.md)
 
 -   :health_worker:{ .lg .middle } __Tế bào học Ung thư cổ tử cung (Cervical Cancer Cytology)__
 
     ---
     ![](images/datasets.png)
 
-    [^^:octicons-arrow-right-24: Xem thêm^^](../research-logs/cervical-cancer-cytology.md)
+    [**:octicons-arrow-right-24: Xem chi tiết**](../research-logs/cervical-cancer-cytology.md)
 
 </div>
 
-
+---
+<br>

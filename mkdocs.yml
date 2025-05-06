@@ -3,7 +3,7 @@ site_name: HocSphere
 
 # 02. setup logo, icon, format, etc.
 theme:
-  favicon: assets/eagle.png
+  favicon: assets/logo.jpg
   palette:
     primary: black 
     accent: red
@@ -45,6 +45,7 @@ extra_css:
   - stylesheets/extra.css
 
 extra_javascript:
+  - javascripts/extra.js
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
