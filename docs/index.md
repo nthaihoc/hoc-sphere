@@ -6,9 +6,11 @@ hide:
 # :heart: Welcome to HocSphere :heart:
 ---
 
-Hello! I’m Hoc, an AI engineer and researcher at the **Institute of Applied Science and Technology**, under **Thai Nguyen University of Information and Communication Technology**. My research focuses on applying machine learning and computer vision to healthcare, where I develop and implement end-to-end AI solutions. In addition to healthcare, I’m passionate about exploring cutting-edge AI techniques for diverse challenges, including 3D applications, autonomous vehicles, and big data processing. For more information, please refer to [**website**](https://nthaihoc.github.io/about-me).
+Xin chào! tôi là Học, kỹ sư và nhà nghiên cứu AI tại [**Institute of Applied Science Technology**](https://iast.ictu.edu.vn) - **Viện Khoa học & Công nghệ Ứng dụng**, thuộc [**University of Information Technology and Communication**](https://ictu.edu.vn) - **Trường Đại học Công nghệ Thông tin & Truyền thông**. tôi tập trung nghiên cứu và phát triển các giải pháp AI toàn diện, ứng dụng **Machine Learning**, **Computer Vision** và **Large Language Models** vào lĩnh vực chăm sóc sức khỏe và giáo dục. Bên cạnh đó, tôi cũng đam mê khám phá những kỹ thuật AI tiên tiến trong nhiều lĩnh vực da dạng như ứng dụng 3D, phương tiện tự hành và xử lý dữ liệu lớn. Bạn có thề tìm hiểu thêm về tôi tại [**website**](https://nthaihoc.github.io/about-me).
 
-**HocSphere** is a platform I created to store and share knowledge. It serves as a centralized space where I gather research materials, document personal insights, and explore a wide range of content—all with a focus on the ever-evolving field of AI. I hope this space becomes a valuable resource and the place where you find exactly what you're looking for.
+**HocSphere** là nền tảng tôi xây dựng để lưu trữ và chia sẻ tri thức. Đây là không gian trung tâm nơi tôi tổng hợp tài liệu nghiên cứu, ghi chép lại các quan sát cá nhân, và khám phá nhiều nội dung xoay quanh thế giới AI không ngừng thay đổi. tôi hi vọng rằng nơi đây sẽ trở thành một tài nguyên hữu ích - nơi bạn có thể tìm thấy đúng điều tôi cần.
+
+$$\textbf{~ Nguyễn Thái Học ~}$$
 
 <figure markdown="span">
         ![Image title](assets/avt.jpg){ width=88% }

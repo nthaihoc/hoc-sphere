@@ -87,24 +87,24 @@ copyright: Copyright & copy; 2025 Thai Hoc Nguyen
 # 04. setup navigation
 nav:
   - Introduction: index.md
-  - Hoc's Research Logs:
+  - Research Notes:
     - research-logs/index.md
     - Cervical Cancer Cytology: research-logs/cervical-cancer-cytology.md
 
-  - Hoc's Course Notes: 
+  - Course Notes: 
     - course-notes/index.md
     - Machine Learning: course-notes/csml/index.md
     - Deep Learning: course-notes/csdl/index.md
 
-  - Hoc's Playbook:
-    - playbook/index.md
-    - Data Structures and Algorithms: playbook/data-structure-and-algorithm.md
-    - Linear Algebra: playbook/linear-algebra.md
-    - Calculus: playbook/calculus.md
-    - Probability and Statistics: playbook/probability-and-statistic.md
+  - Knowledge Base:
+    - knowledge-base/index.md
+    - Data Structures and Algorithms: knowledge-base/data-structure-and-algorithm.md
+    - Linear Algebra: knowledge-base/linear-algebra.md
+    - Calculus: knowledge-base/calculus.md
+    - Probability and Statistics: knowledge-base/probability-and-statistic.md
 
-  - Hoc's Resources: 
-    - resources/index.md
+  # - Hoc's Resources: 
+  #   - resources/index.md
 
 # 05. setup other configurations
 extra:
@@ -116,20 +116,8 @@ extra:
       link: https://nthaihoc.github.io/about-me
       name: Author
     - icon: simple/workplace
-      link: https://ictu.edu.vn
-      name: University of Information and Communication Technology
+      link: https://iast.ictu.edu.vn
+      name: Institute of Applied Science Technology
   analytics:
     provider: google
     property: UA-XXXXXXXX-X
-  csml:
-    lec02: https://drive.google.com/drive/folders/1-pePMyNJuVEXeTV1Nq1zQpGTNm0K3MGo?usp=drive_link
-    code02: https://www.kaggle.com/code/nguyenthaihoc/01-linear-regression-gradient-descent
-  research:
-    resources: https://nthaihoc.github.io/hoc-sphere/research-logs/ccr-slides/
-    slide01: None
-        
-    mate01: None 
-    mate02: https://arxiv.org/pdf/2002.05709
-    mate03: https://arxiv.org/pdf/2006.10029
-    mate04: https://arxiv.org/pdf/1708.03888v3
-    mate05: https://arxiv.org/pdf/2103.00020 

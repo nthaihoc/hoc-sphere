@@ -2,38 +2,29 @@
 icon: material/numeric-1-circle
 ---
 
-!!! abstract
+ ---
+> Đây là dự án được nghiên cứu và triển khai bởi [**Viện KH & CNUD**](https://iast.ictu.edu.vn) với sự hợp tác của [**Bệnh viện A - Thái Nguyên**]() nhằm tạo ra một hệ thống AI có khả năng hỗ trợ các bác sĩ chuyên khoa tế bào học trong việc sàng lọc, dự báo và tư vấn liên quan đến bệnh Ung thư cổ tử cung dựa trên hình ảnh tế bào học.
 
-    Weekly task progress summary of the cervical cancer research project, including:
+## :octicons-tasklist-16: Research Logbook - Sổ tay nghiên cứu
 
-    - Short and long term research tasks on models, techniques and methods for cellular image analysis.
-    - Analyze and research prominent papers to identify solutions for the project. 
-    - Compile notes, slides, paper links and related source code
+| Deadline | Name | Status | Description | Materials |
+| :------- | :--- | :----: | :---------- | :-------: |
+| ==16/09 -> 16/11, 2024== | Nghiên cứu Ensemble Learning cho phân loại Ung thư cổ tử cung tế bào học | :material-check-all: | (--) Nghiên cứu kỹ thuật Ensemble Leanring và các phương pháp của chúng. <br> (--) Lên phương án thực nghiệm cho bộ dữ liệu thực tế. <br> (--) Triển khai đánh giá, và cài đặt huấn luyện nhằm so sánh hiệu suất giữa mô hình đơn lẻ và mô hình kết hợp.| [**[Slides]**](../research-logs/ccc-slides/IAST01-ensemble-learning-for-cervical-cancer-cytology.pdf){:target="_blank"} [**[Code]**](){:target="_blank"} |
+| ==06/01/2025 -> Current== | Nghiên cứu nền tảng & định hướng mô hình sử dụng Self-Supervised Learning (Phần 01) | :material-check-all: | (--) Nghiên cứu tổng quan về Self-Supervised Learning (SSL). <br> (--) Tìm hiểu về một số mô hình SSL phổ biến: BYOL, MoCo, SimCLR. <br> (--) Phân tích chi tiết kiến trúc của SimCLR: backbone, loss function, augmentation & projection head, v.v. | [**[Notes]**](../research-logs/ccc-notes/note01.md){:target="_blank"} |
+|  | Thiết kế & triển khai mô hình SimCLR (Phần 02) | :material-check-all: | (--) Cài đặt kiến trúc SimCLR, đánh giá tính phù hợp và huấn luyện cho bài toán phân loại tế bào học. <br> (--) Lên phương án thực nghiệm nhanh, sau đó đánh giá kết quả sơ bộ và lên kế hoạch điều chỉnh. <br> Tối ưu hóa và mở rộng tinh chỉnh, gia tăng hiệu suất cho mô hình.| [**[Slides]**](../research-logs/ccc-slides/IAST03-the-simclr-model.pdf){:target="blank"} [**[Notes]**](../research-logs/ccc-notes/note02.md){:target="blank"} [**[Code]**](){:target="blank"} | 
 
+## :octicons-link-16: Quick Links - Liên kết nhanh
 
-## :octicons-tasklist-16: Weekly Task Progress
+Toàn bộ **materials** (tài liệu tham khảo) và  **resources** (mã nguồn) của nhật ký nghiên cứu có thể được truy cập nhanh tại đường dẫn sau.
 
-| Deadline | Name | Progress | Description | Research Papers | Materials |
-| :------- | :--- | :----: | :---------- | :------------: | :-------: |
-| ==Sep 16 - Nov 16, 2024== | Ensemble Learning for Cervical Cancer Cytology | :material-check-all: | (--) Researching ensemble learning methods for cervical cancer. <br> (--) Compare the performance between individual and ensemble model. | N/A | [**[Slides]**](../research-logs/ccc-slides/IAST01-ensemble-learning-for-cervical-cancer-cytology.pdf){:target="_blank"} [**[Code]**](){:target="_blank"} |
-| ==Sep 23, 2024== | Methods for Preprocessing and Data Split for Multi-Classification | :material-check-all: | (--) Researching the preprocessing and data split techniques. <br> (--) Implementation these methods on cervical cancer datasets. | N/A | [**[Slides]**](../research-logs/ccc-slides/IAST02-methods-for-preprocessing-and-splitting-data-for-multiclass-classification.pdf){:target="_blank"} |
-| ==Jan 06 - Jan 13, 2025== | Self-Supervised Model Learning | :material-check-all: | (--) Overview the Self-Supervised Learning topic. <br> (--) Introduction to the outstanding model of Self-Supervised Learning: SimCLR. <br> (--) Researching the aspects of SimCLR model: architecture, I-O data, loss function, fine-tune strategies, etc. | [**[PP]**]({{ research.mate02 }}){:target="_blank"} | [**[Notes]**](../research-logs/ccc-notes/note01.md){:target="_blank"} |
-| ==Jan 13 - Jan 20, 2025== | Implementation SimCLRv1 Model (Part 1) | :material-check-all: | (--) Building and designing the SimCLR model: backbone, loss function, fine-tuning, augmentation techniques, etc. <br> (--) Conduct quick experiments and evaluations on a small subset of the cervical cancer dataset. | [**[PP01]**]({{ research.mate02 }}){:target="blank"} [**[PP02]**]({{ research.mate04 }}){:target="blank"} | [**[Slides]**](../research-logs/ccc-slides/IAST03-the-simclr-model.pdf){:target="blank"} [**[Notes]**](../research-logs/ccc-notes/note02.md){:target="blank"} [**[Code]**](){:target="blank"} | 
-| ==Jan 20, 2025 - Current== | Implementation SimCLRv1 Model (Part 2) | ^^Progress^^ | (--) Expand experiments on various strategies and approaches: transfer learning, fine-tuning. <br> (--) Conduct detailed evaluations of the results and compare the effectiveness of different methods. | [**[PP]**]({{ research.mate02 }}){:target="blank"} | {++Pending++} | 
-| ==Mar 28 - Mar 31, 2025== | Overview of VLM (Vision Language Model) and its general application in cervical cancer | ^^Progress^^ | (--) What is VLM? <br> (--) How do models works? <br> (--) Training methods: contrastive learning, cross-modal learning. <br> (--) Applications of VLMs in healthcare. | [**[PP]**]({{ research.mate05 }}){:target="blank"} | [**[Notes]**](../research-logs/ccc-notes/note04.md){:target="blank"} |
+[Resources :paperclips:](https://){.md-button} 
 
-## :octicons-link-16: Quick Links
-
-Including quick links folder of project: {++resources++} and {++research paper++}.
-
-[Resources :paperclips:]({{ research.resources }}){.md-button} 
-
-[Research Paper :material-file-document-outline:](https://){.md-button}
+[Materials :material-file-document-outline:](https://){.md-button}
 
 
-## :material-database-settings: Datasets
+## :material-database-settings: Datasets - Bộ dữ liệu
 
-The cervical cancer dataset from Hospital A in Thai Nguyen includes images of both common and rare cancerous cells.
+Bộ dữ liệu về ung thư cổ tử cung này được thu thập và gán nhãn thủ công bởi các bác sĩ chuyên khoa tại Bệnh viện A, Thái Nguyên. Dữ liệu hiện đã được công khai, phục vụ cho mục đích tham khảo và nghiên cứu.
 
 [Atlat Datasets :material-web:](https://label.ai4med.vn/auth/login){.md-button}
 
