@@ -96,7 +96,7 @@ nav:
     - course-notes/index.md
     - Machine Learning: course-notes/csml/index.md
     - Deep Learning: course-notes/csdl/index.md
-
+    - Large Language Model: course-notes/csllm/index.md
   - Knowledge Base:
     - knowledge-base/index.md
     - Data Structures and Algorithms: knowledge-base/data-structure-and-algorithm.md
