@@ -67,7 +67,7 @@ Tiến hành thiết lập một số mô hình đơn giản ban đầu nhằm s
 - Sử dụng hàm mất mát NT-Xent để học biểu diễn.
 - Huấn luyện SimCLR lần lượt với 5 backbone đã được lựa chọn.
 
-| ^^Model (backbone)^^ | ^^Augmentation^^ | ^^Loss^^ | ^^Optimizer^^ | ^^Batch Size^^ | ^^Epoch^^ |
+| ^^Model (backbone)^^ | ^^Augmentation^^ | ^^Loss^^ | ^^Optimizer (learning rate)^^ | ^^Batch Size^^ | ^^Epoch^^ |
 | :---- |:---: | :--: | :------: | :--------: | :---: |
 | SimCLR (ResNet-50) |          |      |      |       |      | 
 | SimCLR (ResNet-101) |         |      |
@@ -75,16 +75,16 @@ Tiến hành thiết lập một số mô hình đơn giản ban đầu nhằm s
 | SimCLR (Inception-V3) |       |      |         |     |     |
 | SimCLR (EfficientNet-B0) |    |      |         |     |     |
 
-{++Ghi chú:++} (1) Các kỹ thuật augmentation được sử dụng bao gồm: RandomResizedCrop, RandomHorizontalFlip, RandomApply, RandomGrayScale, GaussianBlur, Normalize. 
+{++(1)++} Các kỹ thuật augmentation được sử dụng bao gồm: RandomResizedCrop, RandomHorizontalFlip, RandomApply, RandomGrayScale, GaussianBlur, Normalize. 
 
 
 **Giai đoạn 2: Fine-tuning (Linear protocol)**
 
-- Để đánh giá khả năng tận dụng dữ liệu không gán nhãn của mô hình SimCLR, tiến hành fine-tune mô hình với các tỷ lệ khác nhau của tập train có nhãn: 10%, 30%, 50%, 70% và 100%. 
+- Để đánh giá khả năng tận dụng dữ liệu không gán nhãn của mô hình SimCLR, tiến hành fine-tune mô hình với tập dữ liệu train (sử dụng nhãn).
 
-- Mục tiêu nhằm xác định tính hiệu quả của SimCLR khi số lượng nhãn giảm mạnh.
+- Fine-tune pretrained SimCLR lần lượt với tỷ lệ dữ liệu có nhãn (5, 10, 30, 50, 70, 90, 100%). Mục tiêu nhằm xác định tính hiệu quả của SimCLR khi số lượng nhãn giảm mạnh.
 
-| ^^Model (backbone)^^ | ^^Augmentation^^ | ^^Loss^^ | ^^Optimizer^^ | ^^Batch Size^^ | ^^Epoch^^ |
+| ^^Model (backbone)^^ | ^^Augmentation^^ | ^^Loss^^ | ^^Optimizer (leanring rate)^^ | ^^Batch Size^^ | ^^Epoch^^ |
 | :---- |:---: | :--: | :------: | :--------: | :---: |
 | SimCLR (ResNet-50) |          |      |      |       |      | 
 | SimCLR (ResNet-101) |         |      |
@@ -92,10 +92,39 @@ Tiến hành thiết lập một số mô hình đơn giản ban đầu nhằm s
 | SimCLR (Inception-V3) |       |      |         |     |     |
 | SimCLR (EfficientNet-B0) |    |      |         |     |     |
 
-{++Ghi chú:++} (2) Các kỹ thuật augmentation ở đây được sử dụng bao gồm: Resize, CenterCrop, RandomHorizontalFlip, Normalize.
+{++(2)++} Các kỹ thuật augmentation ở đây được sử dụng bao gồm: Resize, CenterCrop, RandomHorizontalFlip, Normalize.
 
+==**2. Huấn luyện mô hình baseline**==
+
+- Sử dụng toàn bộ tập train (có nhãn) để fine-tune trên tất cả các mô hình baseline, việc setup fine-tune như augmentation, loss, optimizer, batch size giống hệt như giai đoạn fine-tune pretrained SimCLR.
+- Fine-tune có điều chỉnh với tỷ lệ dữ liệu có nhãn khác nhau (tương tự fine-tune pretrained SimCLR), đảm bảo tính công bằng khi so sánh hiệu suất giữa hai chiến lược supervised learning và self-supervised learning. 
+
+{++Ghi chú :++} 
+
+- Trong quá trình pretraining SimCLR, việc sử dụng cả tập train + dev (không nhãn) làm dữ liệu huấn luyện giúp tận dụng tối đa dữ liệu sẵn có.
+- Quá trình fine-tune pretrained SimCLR và mô hình baseline sử dụng tập train (có nhãn) làm dữ liệu huấn luyện và tập dev (có nhãn) làm tập kiểm định, nhằm chọn ra mô hình tốt nhất.
+- Tập test (có nhãn) chỉ được sử dụng một lần duy nhất sau khi quá trình huấn luyện và lựa chọn mô hình hoàn tất. Đảm bảo tính khách quan và độ tin cậy của thực nghiệm.
+- Tất cả các mô hình SimCLR và baseline đều khởi tạo bằng trọng số ImageNet cho quá trình huấn luyện, đảm bảo rằng sự khác biệt hiệu suất không đến từ phương pháp huấn luyện (không phải do lợi thế khởi tạo khác nhau).
+- Sử dụng chiến lược huấn luyện E2E (End-to-End Fine-tuning) để tinh chỉnh toàn bộ mô hình từ đầu, TS (Two-Stage Fine-tuning) để huấn luyện hai giai đoạn. Cả hai chiến lược này sẽ được áp dụng cho các giai đoạn fine-tune của toàn bộ thực nghiệm. 
 
 ## IV. Đánh giá kết quả
+
+==**1. Đánh giá mô hình SimCLR**==
+
+**a/ Đánh giá giai đoạn pretrained SimCLR**
+
+| ^^Mô hình^^ | ^^Backbone^^ | ^^Weight^^ | ^^NT-Xent Loss^^ |
+| :-----: | :------- | :---: | :--------: |
+|         | ResNet-50       | Random init |
+|         |                 | ImageNet    |
+|         | DenseNet-121    | Random init |
+|         |                 | ImageNet    |
+|  SimCLR | Inception-V3    | Random init |
+|         |                 | ImageNet    |
+|         | ResNet-101      | Random init |
+|         |                 | ImageNet    |                  
+|         | EfficientNet-B0 | Random init |
+|         |                 | ImageNet    |                   
 
 
 <br>
